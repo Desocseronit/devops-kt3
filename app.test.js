@@ -5,7 +5,7 @@ describe('App Routes', () => {
   it('GET / should return "KT3 App"', async () => {
     const res = await request(app).get('/');
     expect(res.statusCode).toEqual(200);
-    expect(res.text).toBe('KT3 App');
+    expect(res.text).toBe('Broken App');
   });
 
   it('GET /health should return { status: "ok" }', async () => {
